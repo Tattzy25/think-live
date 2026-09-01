@@ -5,7 +5,7 @@
   "main": "src/server.ts",
   "ai": { "binding": "AI" },
   "assets": {
-  "directory": "./public",
+  "directory": "./dist",
   "not_found_handling": "single-page-application",
   "run_worker_first": ["/agents/*"]
   },
