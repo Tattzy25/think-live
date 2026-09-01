@@ -1,0 +1,38 @@
+{
+  "author": "",
+  "description": "A simple agent that can receive phone calls and respond to them.",
+  "keywords": [],
+  "license": "ISC",
+  "name": "@cloudflare/agents-openai-call-my-agent",
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf dist .wrangler node_modules/.vite node_modules/.vite-temp",
+    "deploy": "vite build && wrangler deploy",
+    "start": "vite dev",
+    "types": "wrangler types env.d.ts --include-runtime false"
+  },
+  "type": "module",
+  "version": "0.0.0",
+  "dependencies": {
+    "@cloudflare/ai-chat": "^0.11.0",
+    "@cloudflare/shell": "^0.4.3",
+    "@cloudflare/think": "^0.17.0",
+    "@openai/agents-extensions": "^0.17.0",
+    "agents": "^0.22.0",
+    "ai": "^7.0.87",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "workers-ai-provider": "^4.0.0",
+    "zod": "^4.5.4"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.54.2",
+    "@cloudflare/workers-types": "^5.20260831.1",
+    "@tailwindcss/vite": "^4.3.3",
+    "@vitejs/plugin-react": "^6.1.1",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2",
+    "vite": "^8.2.2",
+    "wrangler": "^4.127.1"
+  }
+}

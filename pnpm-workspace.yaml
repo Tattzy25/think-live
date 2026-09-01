@@ -1,0 +1,9 @@
+allowBuilds:
+  '@mongodb-js/zstd': true
+  core-js-pure: true
+  esbuild: true
+  node-liblzma: true
+  workerd: true
+minimumReleaseAgeExclude:
+  - '@ai-sdk/gateway@4.0.70'
+  - ai@7.0.87
